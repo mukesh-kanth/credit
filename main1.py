@@ -6,7 +6,7 @@ import numpy as np
 st.title("Credit Card Fraud Detection App")
 
 filename="random.pkl"
-with open(path.join("model",filename),'rb') as f:
+with open(path.join(filename),'rb') as f:
     random = pickle.load(f)
     
 V1 = st.number_input("Enter the transaction id")
